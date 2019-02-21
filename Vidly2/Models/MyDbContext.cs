@@ -5,7 +5,7 @@ using System.Linq;
 using System.Web;
 using Vidly.Models;
 
-namespace Vidly2.Models
+namespace Vidly.Models
 {
     public class MyDbContext:DbContext
     {

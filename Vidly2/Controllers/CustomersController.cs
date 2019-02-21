@@ -5,7 +5,6 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Vidly.Models;
-using Vidly2.Models;
 
 namespace Vidly2.Controllers
 {
@@ -33,7 +32,7 @@ namespace Vidly2.Controllers
 
         public ActionResult Details(int id)
         {
-            Customer cust = _context.Customers.SingleOrDefault(x => x.Id == id);
+            Customer cust = _context.Customers.Include(c => c.MembershipType).SingleOrDefault(x => x.Id == id);
             if(cust != null)
             {
                 return View(cust);
@@ -42,9 +41,6 @@ namespace Vidly2.Controllers
             {
                 return HttpNotFound();
             }
-
-            
-
         }
     }
 }

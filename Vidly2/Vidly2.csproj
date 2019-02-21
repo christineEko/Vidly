@@ -181,8 +181,41 @@
     <Compile Include="Migrations\201902181021148_ApplyDataAnnotationToCustomerName.Designer.cs">
       <DependentUpon>201902181021148_ApplyDataAnnotationToCustomerName.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201902191015204_UpdateModel.cs" />
+    <Compile Include="Migrations\201902191015204_UpdateModel.Designer.cs">
+      <DependentUpon>201902191015204_UpdateModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902191023042_PopulateMembershipTypesAgain.cs" />
+    <Compile Include="Migrations\201902191023042_PopulateMembershipTypesAgain.Designer.cs">
+      <DependentUpon>201902191023042_PopulateMembershipTypesAgain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902191025544_PopulateMigrationTypeName.cs" />
+    <Compile Include="Migrations\201902191025544_PopulateMigrationTypeName.Designer.cs">
+      <DependentUpon>201902191025544_PopulateMigrationTypeName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902191116353_AddBirthDate.cs" />
+    <Compile Include="Migrations\201902191116353_AddBirthDate.Designer.cs">
+      <DependentUpon>201902191116353_AddBirthDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902191154171_UpdateDateTime.cs" />
+    <Compile Include="Migrations\201902191154171_UpdateDateTime.Designer.cs">
+      <DependentUpon>201902191154171_UpdateDateTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902201036062_AddGenre.cs" />
+    <Compile Include="Migrations\201902201036062_AddGenre.Designer.cs">
+      <DependentUpon>201902201036062_AddGenre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902201040117_UpdateMovie.cs" />
+    <Compile Include="Migrations\201902201040117_UpdateMovie.Designer.cs">
+      <DependentUpon>201902201040117_UpdateMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902201058475_PopulateGenreTable.cs" />
+    <Compile Include="Migrations\201902201058475_PopulateGenreTable.Designer.cs">
+      <DependentUpon>201902201058475_PopulateGenreTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Genre.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
     <Compile Include="Models\MyDbContext.cs" />
@@ -231,6 +264,7 @@
     <Content Include="Views\Movies\Index.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
+    <Content Include="Views\Movies\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -265,6 +299,30 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201902181021148_ApplyDataAnnotationToCustomerName.resx">
       <DependentUpon>201902181021148_ApplyDataAnnotationToCustomerName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902191015204_UpdateModel.resx">
+      <DependentUpon>201902191015204_UpdateModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902191023042_PopulateMembershipTypesAgain.resx">
+      <DependentUpon>201902191023042_PopulateMembershipTypesAgain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902191025544_PopulateMigrationTypeName.resx">
+      <DependentUpon>201902191025544_PopulateMigrationTypeName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902191116353_AddBirthDate.resx">
+      <DependentUpon>201902191116353_AddBirthDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902191154171_UpdateDateTime.resx">
+      <DependentUpon>201902191154171_UpdateDateTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902201036062_AddGenre.resx">
+      <DependentUpon>201902201036062_AddGenre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902201040117_UpdateMovie.resx">
+      <DependentUpon>201902201040117_UpdateMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902201058475_PopulateGenreTable.resx">
+      <DependentUpon>201902201058475_PopulateGenreTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
